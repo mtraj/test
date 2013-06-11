@@ -7,7 +7,6 @@ var mountFolder = function (connect, dir) {
 module.exports = function (grunt) {
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
   // configurable paths
   var yeomanConfig = {
     app: 'app',
@@ -256,6 +255,12 @@ module.exports = function (grunt) {
             'styles/fonts/*'
           ]
         }]
+      }
+    },
+    release: {
+      options: {
+        file: 'component.json', //default: package.json
+        npm: false //default: true
       }
     }
   });

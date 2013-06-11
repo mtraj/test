@@ -1,0 +1,8 @@
+node_modules
+dist
+.editorconfig
+.idea
+.project
+.tmp
+.sass-cache
+app/components
